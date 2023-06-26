@@ -10,45 +10,124 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/portfolio-media.css">
+    
+
+
 </head>
 
-    <header class = "header-header">
-        <div class = "container header-container">
-        <nav class = "listts">
-            <a  class = "link-link link" href = "./index.html">Web<span class = "logo-color logo">Studio</span></a>
-            <ul class = "listhed list">
-                <li class = "list-header-link"><a class = "header-link link" href = "./index.html">Studio</a></li>
-                <li class = "list-header-link"><a class = "header-link link current" href = "./portfolio.html">Portfolio</a></li>
-                <li class = "list-header-link"><a class = "header-link link" href = "">Contacts</a></li>
-            </ul>
-            </nav>
-        <address class = "header-adress adress">
-            <ul class = "listad list">
-                <li class = "contact-list"><a class = "header-adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class = "contact-list"><a class = "header-adress-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
-    </div>
-        </header>
+        <header class = "page-header header-header">
+            <div class = "container header-container">
+            <nav class = "listts">
+                <a  class = "link-link link" href = "./index.html">Web<span class = "logo-color logo">Studio</span></a>
+                <ul class = "listhed list">
+                    <li class = "list-header-link"><a class = "header-link link" href = "./index.html">Studio</a></li>
+                    <li class = "list-header-link"><a class = "header-link link current" href = "./portfolio.html">Portfolio</a></li>
+                    <li class = "list-header-link"><a class = "header-link link" href = "">Contacts</a></li>
+                </ul>
+                </nav>
+            <address class = "header-adress link">
+                <ul class = "listad list">
+                    <li class = "contact-list"><a class = "header-adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class = "contact-list"><a class = "header-adress-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+    
+        
+            <button type="button" class="mob-menu-open" data-menu-open>
+                <svg width="32" height="22">
+                    <use href="./images/icons.svg#icon-charm_menu-hamburger-1"></use>
+                </svg>
+            </button>
+        </div>
+    
+        <div class="mob-menu is-hidden" data-menu>
+            <div>
+                <button type="button" class="menu-modal-close" data-menu-close>
+                    <svg class="mob-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-mob"> </use>
+                    </svg>
+                </button>
+    
+                <nav class="mobil-menu-nav">
+                    <ul class="mob-menu-nav list">
+                        <li class="mob-menu-item">
+                            <a href="./index.html" class="mob-menu-link link">Studio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="./portfolio.html" class="mob-menu-link link active">Portfolio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="" class="mob-menu-link link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div>
+                <address class="mobil-menu-adress">
+                    <ul class="mob-menu-nav list">
+                        <li class="mob-menu-item">
+                            <a href="tel:+110001111111" class="mob-menu-tel-link link">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="mailto:info@devstudio.com" class="mob-menu-adress-link link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mob-soc-list list">
+                    <li class="mob-soc-item list">
+                        <a href="" class="link mob-soc-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item list">
+                        <a href="" class="link mob-soc-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item list">
+                        <a href="" class="link mob-soc-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item list">
+                        <a href="" class="link mob-soc-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            </header>
 
     <main>
         <section class = "porfolio-section">  
             <div class = "container">
             <h1 hidden class = "visually-hidden">portfol</h1>
                 <ul class = "listtts list">
-                    <li class = "btn">
+                    <li class = "btn-portfolio">
                     <button class = "second-btn" type = "button" >All</button>
                 </li>
-                <li class = "btn">
+                <li class = "btn-portfolio">
                     <button class = "second-btn" type = "button" >Web Site</button>
                 </li>
-                <li class = "btn">
+                <li class = "btn-portfolio">
                     <button class = "second-btn" type = "button" >App</button>
                 </li>
-                <li class = "btn">
+                <li class = "btn-portfolio">
                     <button class = "second-btn" type = "button" >Design</button>
                 </li>
-                <li class = "btn">
+                <li class = "btn-portfolio">
                     <button class = "second-btn" type = "button" >Marketing</button>
                 </li>
                 </ul>
@@ -57,7 +136,15 @@
                     <li class = "section-link" >
                         <a class = "links" href="">
                             <div class = "content-cover-wrap">
-                                <img src="./images/first.jpg" alt="interface" width="360"/>
+                                <picture>
+                                    <source media="(min-width: 1158px)"
+                                        srcset="./images/first-1x.png 1x, ./images/first-2x.png 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/first-table-1x.jpg 1x, ./images/first-table-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/first-mob-1x.jpg 1x, ./images/first-mob-2x.jpg 2x">
+                                <img src="./images/first.jpg" alt="interface" width="360" class = "picture-portfolio"/>
+                                </picture>
                                 <p class = "content-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class = "app-conttainer">
@@ -69,7 +156,15 @@
                     <li class = "section-link">
                         <a class = "links" href="">
                             <div class = "content-cover-wrap">
-                                <img src="./images/second.jpg" alt="payment" width="360"/>
+                                <picture>
+                                    <source media="(min-width: 1158px)"
+                                        srcset="./images/second-1x.jpg 1x, ./images/second-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/second-table-1x.jpg 1x, ./images/second-tale-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/second-mob-1x.jpg 1x, ./images/second-mob-2x.jpg 2x">
+                                <img src="./images/second.jpg" alt="payment" width="360" class = "picture-portfolio"/>
+                                </picture>
                                 <p class = "content-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                         <div class = "app-conttainer">
@@ -81,7 +176,15 @@
                     <li class = "section-link">
                         <a class = "links" href="">
                             <div class = "content-cover-wrap">
-                                <img src="./images/three.jpg" alt="meditation" width="360" />
+                                <picture>
+                                    <source media="(min-width: 1158px)"
+                                        srcset="./images/three-1x.jpg 1x, ./images/three-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/three-table-1x.jpg 1x, ./images/three-table-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/three-mob-1x.jpg 1x, ./images/three-mob-2x.jpg 2x">
+                                <img src="./images/three.jpg" alt="meditation" width="360" class = "picture-portfolio" />
+                                </picture>
                                 <p class = "content-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class = "app-conttainer">
@@ -93,7 +196,15 @@
                     <li class = "section-link">
                         <a class = "links" href="">
                             <div class = "content-cover-wrap">
-                                <img src="./images/four.jpg" alt="taxi" width="360" />
+                                <picture>
+                                    <source media="(min-width: 1158px)"
+                                        srcset="./images/four-1x.png 1x, ./images/four-2x.png 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/four-table-1x.jpg 1x, ./images/four-table-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/four-mob-1x.jpg 1x, ./images/four-mob-2x.jpg 2x">
+                                <img src="./images/four.jpg" alt="taxi" width="360" class = "picture-portfolio" />
+                                </picture>
                                 <p class = "content-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class = "app-conttainer">
@@ -105,7 +216,15 @@
                     <li class = "section-link">
                         <a class = "links" href="">
                             <div class = "content-cover-wrap">
-                                <img src="./images/five.jpg" alt="screen" width="360"/>
+                                <picture>
+                                    <source media="(min-width: 1158px)"
+                                        srcset="./images/five-1x.jpg 1x, ./images/five-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/five-table-1x.jpg 1x, ./images/five-table-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/five-mob-1x.jpg 1x, ./images/five-mob-2x.jpg 2x">
+                                <img src="./images/five.jpg" alt="screen" width="360" class = "picture-portfolio" />
+                                </picture>
                                 <p class = "content-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class = "app-conttainer">
@@ -117,7 +236,15 @@
                     <li class = "section-link">
                         <a class = "links" href="">
                             <div class = "content-cover-wrap">
-                                <img src="./images/six.jpg" alt="courses" width="360"/>
+                                <picture>
+                                    <source media="(min-width: 1158px)"
+                                        srcset="./images/six-1x.jpg 1x, ./images/six-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/six-table-1x.jpg 1x, ./images/six-table-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/six-mob-1x.jpg 1x, ./images/six-mob-2x.jpg 2x">
+                                <img src="./images/six.jpg" alt="courses" width="360" class = "picture-portfolio"/>
+                                </picture>
                                 <p class = "content-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class = "app-conttainer">
@@ -129,7 +256,15 @@
                     <li class = "section-link">
                         <a class = "links" href="">
                             <div class = "content-cover-wrap">
-                                <img src="./images/seven.jpg" alt="sories" width="360"/>
+                                <picture>
+                                    <source media="(min-width: 1158px)"
+                                        srcset="./images/seven-1x.jpg 1x, ./images/seven-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/seven-table-1x.jpg 1x, ./images/seven-table-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/seven-mob-1x.jpg 1x, ./images/seven-mob-2x.jpg 2x">
+                                <img src="./images/seven.jpg" alt="sories" width="360" class = "picture-portfolio" />
+                                </picture>
                                 <p class = "content-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class = "app-conttainer">
@@ -141,7 +276,15 @@
                     <li class = "section-link">
                         <a class = "links" href="">
                             <div class = "content-cover-wrap">
-                                <img src="./images/eight.jpg" alt="website" width="360"/>
+                                <picture>
+                                    <source media="(min-width: 1158px)"
+                                        srcset="./images/eight-1x.jpg 1x, ./images/eight-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/eight-table-1x.jpg 1x, ./images/eight-table-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/eight-mob-1x.jpg 1x, ./images/eight-mob-2x.jpg 2x">
+                                <img src="./images/eight.jpg" alt="website" width="360" class = "picture-portfolio" />
+                                </picture>
                                 <p class = "content-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class = "app-conttainer">
@@ -153,7 +296,15 @@
                     <li class = "section-link">
                         <a class = "links" href="">
                             <div class = "content-cover-wrap">
-                                <img src="./images/nine.jpg" alt="coffe" width="360"/>
+                                <picture>
+                                    <source media="(min-width: 1158px)"
+                                        srcset="./images/nine-1x.jpg 1x, ./images/nine-2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/nine-table-1x.jpg 1x, ./images/nine-table-2x.jpg 2x">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/nine-mob-1x.jpg 1x, ./images/nine-mob-2x.jpg 2x">
+                                <img src="./images/nine.jpg" alt="coffe" width="360" class = "picture-portfolio" />
+                                </picture>
                                 <p class = "content-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class = "app-conttainer">
@@ -218,9 +369,12 @@
                 </svg>
             </button>
             </form>
+        </div>
     </div>
-    </div>
-    </footer>
+</footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>

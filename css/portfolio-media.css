@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+    
+    .listtts {
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    .listtsport {
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .section-link {
+        width: calc((100% - 24px) / 2);
+    }
+    
+    .container {
+        max-width: 766px;
+    }
+
+    .porfolio-section {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    .porfolio-section {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+
+    .listts {
+        margin-bottom: 72px;
+    }
+
+    .listtsport {
+        row-gap: 48px;
+    }
+
+    .section-link {
+        width: calc((100% - 48px) / 3);
+    }
+}
