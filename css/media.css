@@ -3,8 +3,11 @@
         max-width: 766px;
     }
 
+    /*.listad {
+        display: block;
+    }*/
     
-    .header-header {
+    .page-header {
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -40,7 +43,7 @@
         position: relative;
 
         display: block;
-        padding: 10px 0;
+        padding: 24px 0;
 
         transition-property: color;
         transition-duration: 250ms;
@@ -79,12 +82,9 @@
         display: block;
     }
 
-    .listad {
-        display: block;
-    }
 
     .contact-list {
-        margin-bottom: 0px;
+        margin-bottom: 12px;
     }
 
     .header-adress-link {
@@ -197,6 +197,7 @@
     }
 
     /* footer */
+    
     .end {
         padding: 96px 0;
     }
@@ -205,7 +206,6 @@
         display: flex;
         max-width: 582px;
         align-items: baseline;
-        justify-content: center;
     }
 
     .footer-ap {
@@ -231,7 +231,7 @@
 
     .subscribe-container {
         text-align: left;
-        width: 453px;
+        width: 500px;
         height: 80px;
 
     }
@@ -249,7 +249,6 @@
         max-width: 1158px;
     }
 
-    
 
     .link-link {
         margin-right: 76px;
