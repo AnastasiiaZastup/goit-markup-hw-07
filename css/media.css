@@ -1,11 +1,46 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px){
+    .form-footer {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-text {
+       text-align: center;
+    }
+
+    .p-sociall-media {
+        text-align: center;
+    }
+
+    .footer-ap {
+        text-align: center;
+    }
+
+    .form-footer-input {
+        width: 300px;
+    }
+
+    .header-adress {
+        display: none;
+    }
+
+    .page-header {
+        padding-top: 24px;
+        padding-bottom: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .container {
         max-width: 766px;
     }
 
-    /*.listad {
-        display: block;
-    }*/
+    .listad {
+        display: flex;
+        flex-direction: column;
+    }
     
     .page-header {
         padding-top: 0;
@@ -84,7 +119,7 @@
 
 
     .contact-list {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
     .header-adress-link {
@@ -137,7 +172,7 @@
     (min-resolution: 2dppx) {
         .studio {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/people-office-2x.png);
+                url(../images/people-office-second-2x.png);
             max-width: 1440px;
         }
     }
@@ -199,13 +234,14 @@
     /* footer */
     
     .end {
-        padding: 96px 0;
+        /*padding: 96px 0;*/
     }
 
     .all-footer {
         display: flex;
         max-width: 582px;
         align-items: baseline;
+        /*padding: 96px 0;*/
     }
 
     .footer-ap {
@@ -242,13 +278,26 @@
         margin-right: 24px;
         margin-bottom: 0;
     }
+
+    .form-footer-input {
+        width: 264px;
+    }
+
+    .subscribe-text {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1158px) {
+    
     .container {
         max-width: 1158px;
     }
 
+    .listad {
+    display: flex;
+    gap: 24px;
+}
 
     .link-link {
         margin-right: 76px;
@@ -414,6 +463,7 @@
     .listteam {
         display: flex;
         gap: 24px;
+        flex-direction: row;
     }
 
     .people-team-one {
@@ -450,8 +500,14 @@
     }
 
     /* footer */
-    .end {
-        padding: 100px 0;
+    /*.end {
+        padding: 96px 0;
+    }*/
+
+    .form-footer {
+    display: flex;
+    gap: 24px;
+
     }
 
     .all-footer {
@@ -481,5 +537,31 @@
     .footer-button:is(:hover, :focus) {
         color: #404bbf;
     }
-}
 
+    .subscribe-text {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        text-align: left;
+    }
+
+    .p-sociall-media {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+}
+    .mob-menu-open {
+        display: none;
+    }
+
+     .form-footer-input {
+        width: 264px;
+    }
+
+}

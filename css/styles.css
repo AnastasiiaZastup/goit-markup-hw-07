@@ -45,16 +45,23 @@ body {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.page-header {
+/*.page-header {
     padding-top: 24px;
     padding-bottom: 22px;
-}
+}*/
 
 .list {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
+}
+
+.header-adress {
+    display: flex;
+    gap: 40px;
+    margin-left: 300px;
+    font-style: normal;
 }
 
 .container {
@@ -127,9 +134,7 @@ img {
     
 }*/
 
-.header-adress {
-    display: none;
-}
+
 
 .header-link:hover{
     color: var(--last-color);
@@ -145,7 +150,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     display: block;
-    padding: 12px 0;
+    padding: 20px 0;
     position: relative;
     color: var(--one-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -183,10 +188,10 @@ img {
     
 }
 
-.listad {
+/*.listad {
     display: flex;
-    gap: 40px;
-}
+    gap: 24px;
+}*/
 
 
 /*Секція перша*/
@@ -397,11 +402,12 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 72px;
 } 
 
-.people-team-one:not(:last-child) {
+/*.people-team-one:not(:last-child) {
     margin-bottom: 72px;
- }
+ }*/
  
 .people-team-one {
     background-color: var(--text-color);
@@ -543,6 +549,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 96px 0;
 }
 
 .footer-ap {
@@ -633,12 +640,14 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    align-items: center;
+    text-align: center;
 }
 
 .form-footer {
     display: flex;
     gap: 24px;
+    /*flex-direction: column;
+    align-items: center;*/
 }
 
 .subscribe-container {
@@ -649,7 +658,7 @@ img {
     border: 1px solid var(--text-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 264px;
+    width: 100%;
     height: 40px;
     background-color: transparent;
     color: var(--text-color);
@@ -658,6 +667,7 @@ img {
     letter-spacing: 0.04em;
     padding: 8px 16px;
     margin-bottom: 16px;
+    outline: none;
 
 }
 .subscribe-text {
@@ -667,7 +677,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    align-items: center;
+    text-align: center;
 }
 
 .footer-svg {
@@ -802,7 +812,7 @@ img {
 }
 
 .modal-window-input {
-    width: 360px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -1246,4 +1256,3 @@ img {
  .listhed {
     display: none;
 }
-
